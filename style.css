@@ -324,7 +324,7 @@ button:hover{
     color: #fff;
     font-size: 18px;
     transition: .2s ease-in-out;
-    width: 400px;
+    width: 300px;
 }
 button:hover{
     background: var(--secondary);
