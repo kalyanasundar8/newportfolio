@@ -1,0 +1,321 @@
+:root {
+    --body: #17171f;
+    --selected-text: #A3A3FF;
+    --nav: #404053;
+    --secondary: #9191A4;
+    --badge: #3F3F51;
+    --input-border: #565666;
+    --input: #2A2A35;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--body);
+}
+
+/* Header section */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--nav);
+    padding: 35px;
+}
+
+.nav-links button {
+    background: var(--selected-text);
+    border: none;
+    padding: 15px;
+    width: 120px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    transition: .2s ease-in-out;
+}
+
+button:hover{
+    background: var(--secondary);
+}
+
+/* HEADER section end */
+
+/* HERO section */
+
+.hero-section {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 65px;
+    font-size: 28px;
+    align-items: center;
+    color: rgb(198, 197, 197);
+}
+
+.hero-section h1 {
+    margin-top: 50px;
+    font-size: 60px;
+}
+
+.hero-section img {
+    margin-top: 60px;
+    filter: grayscale(100%);
+    width: 600px;
+}
+
+/* WORK section */
+
+.works {
+    position: absolute;
+    top: 700px;
+    margin: 110px;
+}
+
+.works h2 {
+    font-size: 40px;
+    color: var(--selected-text);
+}
+
+.works p {
+    color: var(--secondary);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+.works .worksample {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.works .worksample .img {
+    border-radius: 5px;
+    width: 400px;
+}
+
+/*WORK section end */
+
+/* HIREME section */
+.hireme {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 180px;
+    position: absolute;
+    top: 1400px;
+    margin: 50px;
+}
+
+.hireme h2 {
+    font-size: 60px;
+    color: var(--selected-text);
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.form input {
+    background: var(--input);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    outline: none;
+    padding: 13px;
+    margin: 5px;
+    width: 400px;
+    color: var(--selected-text);
+}
+
+.socialmedia h3 {
+    color: var(--secondary);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.socialmedia a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 45px;
+}
+
+.socialmedia {
+    margin-bottom: 50px;
+} 
+
+@media(max-width: 760px) {
+
+    /* HEADER section */
+
+    header {
+        display: block;
+        text-align: center;
+    }
+    
+    header .logo {
+        margin-top: 1.5rem;
+        font-size: 30px;
+        font-weight: 700;
+        color: #fff;
+    }
+    
+    header .nav-links {
+        margin-top: 20px;
+    }
+
+    /* HEADER section end */
+
+    /* NAV links */
+    
+    .nav-links a {
+        text-decoration: none;
+        font-size: 20px;
+        color: var(--nav);
+        padding: 10px;
+    }
+    
+    .nav-links button {
+        background: var(--selected-text);
+        border: none;
+        padding: 8px;
+        border-radius: 5px;
+    }
+    button:hover{
+        background: var(--secondary);
+    }
+
+    /*NAV links end */
+
+    /* HERO section */
+
+    .hero-section {
+        margin: 50px;
+        font-size: 28px;
+        width: 400px;
+        color: rgb(198, 197, 197);
+    }
+
+    .hero-section h1 {
+        margin-top: 50px;
+        position: absolute;
+        top: 200px;
+        left: 25px;
+        z-index: 2;
+    }
+
+    .hero-section img {
+        margin-top: 60px;
+        position: absolute;
+        top: 600px;
+        left: 90px;
+        filter: grayscale(100%);
+        width: 220px;
+    }
+
+    /* HERO section end */
+
+    /* WORK section */
+
+    .works {
+        position: absolute;
+        top: 850px;
+        margin: 60px;
+    }
+
+    .works h2 {
+        font-size: 40px;
+        color: var(--selected-text);
+    }
+
+    .works p {
+        color: var(--secondary);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 250px;
+    }
+
+    .works .worksample {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .works .worksample .img {
+        border-radius: 5px;
+        width: 300px;
+    }
+
+    /*WORK section end */
+
+    /* HIREME section */
+    .hireme {
+        position: absolute;
+        top: 2100px;
+        margin: 50px;
+    }
+
+    .hireme h2 {
+        font-size: 40px;
+        color: var(--selected-text);
+        margin-bottom: 30px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form input {
+        background: var(--input);
+        border: 1px solid var(--input-border);
+        border-radius: 4px;
+        outline: none;
+        padding: 13px;
+        margin: 5px;
+        width: 300px;
+        color: var(--selected-text);
+    }
+
+    .socialmedia h3 {
+        color: var(--secondary);
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 25px;
+    }
+
+    .socialmedia a {
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        margin-left: 45px;
+    }
+
+    .socialmedia {
+        margin-bottom: 50px;
+    } 
+}
+
