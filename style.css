@@ -148,7 +148,7 @@ button:hover{
 }
 
 .form button {
-     background: var(--selected-text);
+    background: var(--selected-text);
     border: none;
     padding: 15px;
     width: 120px;
@@ -314,6 +314,21 @@ button:hover{
         width: 300px;
         color: var(--selected-text);
     }
+    
+    .form button {
+    background: var(--selected-text);
+    border: none;
+    padding: 15px;
+    width: 120px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    transition: .2s ease-in-out;
+    width: 400px;
+}
+button:hover{
+    background: var(--secondary);
+}
 
     .socialmedia h3 {
         color: var(--secondary);
