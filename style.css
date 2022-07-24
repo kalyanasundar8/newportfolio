@@ -272,6 +272,7 @@ button:hover{
 
     /* HIREME section */
     .hireme {
+        display: block;
         position: absolute;
         top: 2100px;
         margin: 50px;
