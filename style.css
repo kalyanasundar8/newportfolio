@@ -147,6 +147,20 @@ button:hover{
     color: var(--selected-text);
 }
 
+.form button {
+     background: var(--selected-text);
+    border: none;
+    padding: 15px;
+    width: 120px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    transition: .2s ease-in-out;
+}
+button:hover{
+    background: var(--secondary);
+}
+
 .socialmedia h3 {
     color: var(--secondary);
     text-align: center;
